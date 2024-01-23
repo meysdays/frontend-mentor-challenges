@@ -268,9 +268,28 @@ footer {
 
 .last {
   display: flex;
+  justify-content: space-around;
   
 }
 
 .last--first{
   width: 40%;
+}
+
+.last--other{
+  width: 20%;
+  /* margin-left: 5rem; */
+}
+
+.first-p{
+  width: 80%;
+}
+
+.last--other li{
+  list-style: none;
+  padding: .4rem;
+}
+
+.cen{
+  margin: 2rem auto;
 }
