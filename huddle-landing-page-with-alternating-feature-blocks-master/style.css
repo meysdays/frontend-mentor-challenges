@@ -12,7 +12,8 @@ body {
   background-color: hsl(193, 100%, 96%);
   background-image: url(/images/bg-hero-desktop.svg);
   padding: 0.1em 1em;
-  height: 80%;
+  /* height: 80%; */
+  /* height: 95vh; */
 }
 
 .first {
@@ -57,32 +58,16 @@ body {
 .cont {
   display: flex;
   justify-content: space-between;
-  width: 95%;
+  justify-content:center;
   margin: 0 auto;
   font-size: 10px;
   padding: 1em;
-  margin-top: 3em;
-}
-@media screen and (max-width: 768px) {
-  .cont {
-    flex-direction: column;
-  }
-  .head2 input {
-    font-size: 0.8em;
-    /* padding: 0em 2.6em; */
-    color: red;
-    margin: 0;
-  }
-  .head2 img {
-    width: 40%;
-  }
-  .head2 {
-    margin: 0;
-  }
+  margin-top: 4em;
+  /* background-color: red; */
 }
 
 .com {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
   /* background-color: red; */
 }
@@ -122,10 +107,61 @@ body {
 }
 
 .pic {
-  padding: 1em 1em 1em 10em;
+  width: 50%;
+  /* justify-content: flex-end; */
+  /* padding: 1em 1em 1em 10em; */
+  /* align-items: center; */
 }
 .pic img {
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .cont {
+    flex-direction: column;
+  }
+  .com{
+    width: 80%;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .com p{
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+  .com input{
+    font-size: 1.7em;
+  }
+  .coming{
+    margin: 0 auto;
+  }
+  .pic{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .head2 input {
+    font-size: 0.8em;
+    margin: 0;
+  }
+  .head2 img {
+    width: 40%;
+  }
+  .head2 {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 458px){
+  .com h2{
+    font-size: 1.5rem;
+  }
+  .com p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  .com input{
+    font-size: 1em;
+  }
 }
 
 .second {
@@ -161,14 +197,10 @@ body {
 .inn {
   /* background-color: beige; */
   width: 80%;
-  margin: 0 3.5rem;
+  margin: 0 auto;
   font-family: 'Poppins', sans-serif;
-  /* font-weight: 400; */
   color: hsl(208, 11%, 55%);
   letter-spacing: 0.06rem;
-}
-.left {
-  margin-left: 7rem;
 }
 
 .inn h2 {
@@ -189,7 +221,6 @@ body {
   /* background-color: red; */
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
 }
 .reverse {
@@ -207,9 +238,6 @@ body {
   .scroll {
     width: 100%;
     text-align: center;
-  }
-  .left {
-    margin-left: 3.5rem;
   }
 
   .inn p {
@@ -237,7 +265,6 @@ body {
   /* background-color: blue; */
   position: relative;
   top: 75px;
-  
 }
 
 .third input {
@@ -268,9 +295,125 @@ footer {
 
 .last {
   display: flex;
-  
+  justify-content: space-between;
+  width: 100%;
+  /* background-color: aqua; */
 }
 
-.last--first{
-  width: 40%;
+.last--first {
+  width: 30%;
+  /* background-color: red; */
+  padding: 0 1.5rem;
+}
+.hud{
+  width: 60%;
+  background-color: red;
+}
+.hud img{
+  width: 100%;
+}
+.last--first img {
+  /* width: 100%; */
+  /* object-fit: cover; */
+  /* background-color:black; */
+}
+
+.last--sec {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0 auto; */
+  width: 60%;
+  /* background-color: bisque; */
+  margin: 2.2rem;
+}
+
+.local {
+  padding-top: 0;
+  /* background-color: red; */
+}
+
+.row {
+  display: flex;
+  /* background-color: black; */
+  padding: 0.8rem 0;
+}
+.row img {
+  justify-content: flex-start;
+  /* background-color: red; */
+}
+
+.row p {
+  margin-left: 1rem;
+}
+
+.sid {
+  margin-left: 1.3rem;
+}
+
+.fo {
+  /* background-color: black; */
+}
+
+.fo ul {
+  list-style: none;
+}
+
+.fo ul li {
+  padding: 0.7rem 0;
+}
+.fo img {
+  padding: 2rem 0.2rem;
+}
+
+.cen{
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .last{
+    font-size: 1.5rem;
+  }
+  .third{
+    width: 90%;
+    /* padding: 1.5em 0; */
+  }
+
+  .last{
+    flex-direction: column;
+  }
+  .last--first{
+    width: 100%;
+  }
+  .last--sec{
+    width: 100%;
+    flex-direction: column;
+    margin: -15px;
+  }
+  .cen{
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 0 auto;
+  }
+  .cen img{
+    margin: 0 .8rem;
+    width: 100%;
+     padding: 0 .8rem;
+  }
+}
+
+@media screen and (max-width: 458px){
+  .third input{
+    font-size: 0.6rem;
+    padding: 1.35em 3em;
+  }
+  .third h2{
+    font-size: 1rem;
+  }
+  .head2 input{
+    font-size: .7em;
+    padding: 0.7em 2.5em;
+  }
+  .last{
+    font-size: .8rem;
+  }
 }
